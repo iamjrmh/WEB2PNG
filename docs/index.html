@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEB2PNG - full-page website screenshots</title>
+<meta name="description" content="Paste a list of URLs, pick light or dark, and pull full-page website screenshots straight into your browser.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23f5f3ee' stroke='%2315171a' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23c8442d' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%2315171a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sprockets" aria-hidden="true"></div>
+<header class="site-head">
+  <p class="eyebrow">contact sheet capture tool</p>
+  <h1>WEB2PNG</h1>
+  <p class="lede">Paste in a list of URLs, choose light or dark, and develop full-page screenshots right in your browser. No install, no terminal.</p>
+</header>
+<div class="sprockets" aria-hidden="true"></div>
+
+<main>
+  <form id="capture-form" class="panel" novalidate>
+
+    <div class="field">
+      <span class="label-text">Mode</span>
+      <div class="segmented" role="radiogroup" aria-label="Colour scheme">
+        <input type="radio" name="mode" id="mode-light" value="light" checked>
+        <label for="mode-light">Light</label>
+        <input type="radio" name="mode" id="mode-dark" value="dark">
+        <label for="mode-dark">Dark</label>
+      </div>
+      <p class="hint">Captures the full page, top to bottom, at 1920px wide.</p>
+    </div>
+
+    <div class="field">
+      <label for="urls">URLs <span class="label-sub">one per line</span></label>
+      <textarea id="urls" name="urls" rows="6" placeholder="example.com&#10;anothersite.dev/pricing&#10;https://docs.example.com"></textarea>
+    </div>
+
+    <div class="submit-row">
+      <button type="submit" class="shutter" aria-label="Capture screenshots">
+        <span class="shutter-ring"></span>
+        <span class="shutter-label">Capture</span>
+      </button>
+      <p class="form-error" id="form-error" role="alert" hidden></p>
+    </div>
+  </form>
+
+  <section class="results" id="results" aria-live="polite">
+    <p class="results-empty" id="results-empty">Your contact sheet will appear here once you capture something.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Screenshots render via <a href="https://screenshotone.com" target="_blank" rel="noopener">ScreenshotOne</a>, using a shared access key baked into this site so it works with zero setup. See the <a href="README.md">README</a> if you want to swap in your own key.</p>
+</footer>
+
+<template id="frame-template">
+  <article class="frame">
+    <div class="frame-edge" aria-hidden="true"></div>
+    <div class="frame-body">
+      <p class="frame-number"></p>
+      <div class="frame-image">
+        <img alt="" loading="lazy">
+        <p class="frame-status" hidden></p>
+      </div>
+      <p class="frame-url"></p>
+      <div class="frame-actions">
+        <a class="frame-open" target="_blank" rel="noopener">Open image ↗</a>
+        <button type="button" class="frame-copy">Copy link</button>
+        <button type="button" class="frame-delete">Delete</button>
+      </div>
+    </div>
+    <div class="frame-edge" aria-hidden="true"></div>
+  </article>
+</template>
+
+<script src="script.js"></script>
+</body>
+</html>
