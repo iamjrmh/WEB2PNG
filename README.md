@@ -10,8 +10,7 @@ No install. No terminal. Just paste and capture.
 ![100% client-side UI](https://img.shields.io/badge/runs-100%25%20client--side%20UI-brightgreen)
 ![Powered by ScreenshotOne](https://img.shields.io/badge/powered%20by-ScreenshotOne-2f6bff)
 
-### **[▶ Open WEB2PNG](#)**
-<sub>*(replace this with your GitHub Pages URL once it's live - see [Putting it on GitHub Pages](#-putting-it-on-github-pages))*</sub>
+### **[▶ Open WEB2PNG](https://iamjrmh.github.io/WEB2PNG/)**
 
 </div>
 
@@ -106,16 +105,6 @@ npx serve .
 ```
 
 Then open **http://localhost:8080**, or just open `index.html` directly in a browser.
-
----
-
-## 📤 Putting it on GitHub Pages
-
-1. Push these four files (`index.html`, `style.css`, `script.js`, `README.md`) to a new GitHub repository, at the repo root.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to `Deploy from a branch` → branch `main` → folder `/ (root)` → **Save**.
-4. GitHub gives you a URL like `https://your-username.github.io/your-repo-name/` within a minute or two - that's your live tool.
-5. Come back and drop that URL into the **Open WEB2PNG** link at the top of this file.
 
 ---
 
