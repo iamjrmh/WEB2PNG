@@ -13,6 +13,11 @@
 </head>
 <body>
 
+<button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle site dark mode" aria-pressed="false">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2.5v2.5M12 19v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M2.5 12H5M19 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"></path></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"></path></svg>
+</button>
+
 <div class="sprockets" aria-hidden="true"></div>
 <header class="site-head">
   <p class="eyebrow">contact sheet capture tool</p>
@@ -47,6 +52,7 @@
       </button>
       <p class="form-error" id="form-error" role="alert" hidden></p>
     </div>
+    <!-- .submit-row is centered as a column via CSS so the button sits in the middle of the panel -->
   </form>
 
   <section class="results" id="results" aria-live="polite">
