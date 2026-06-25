@@ -1,8 +1,8 @@
 <div align="center">
 
-# 📸 WEB2PNG
+![STEP2STL](WEB2PNG.png)
 
-**Full-page website screenshots — paste URLs, pick light or dark, done.**
+**Full-page website screenshots - paste URLs, pick light or dark, done.**
 
 No install. No terminal. Just paste and capture.
 
@@ -11,7 +11,7 @@ No install. No terminal. Just paste and capture.
 ![Powered by ScreenshotOne](https://img.shields.io/badge/powered%20by-ScreenshotOne-2f6bff)
 
 ### **[▶ Open WEB2PNG](#)**
-<sub>*(replace this with your GitHub Pages URL once it's live — see [Putting it on GitHub Pages](#-putting-it-on-github-pages))*</sub>
+<sub>*(replace this with your GitHub Pages URL once it's live - see [Putting it on GitHub Pages](#-putting-it-on-github-pages))*</sub>
 
 </div>
 
@@ -27,7 +27,7 @@ FR. 02   anothersite.dev/pricing  → full-page screenshot, dark mode
 FR. 03   docs.example.com         → full-page screenshot, light mode
 ```
 
-Every frame gives you **Open image**, **Copy link**, and **Delete** — no accounts, no dashboard, no saved history.
+Every frame gives you **Open image**, **Copy link**, and **Delete** - no accounts, no dashboard, no saved history.
 
 ---
 
@@ -35,25 +35,25 @@ Every frame gives you **Open image**, **Copy link**, and **Delete** — no accou
 
 | Step | What to do |
 |:---:|---|
-| **1** | **Pick a mode** — toggle **Light** or **Dark** for how the captured *site* should render |
-| **2** | **Paste URLs** — one per line; `https://` is added automatically if you leave it off |
-| **3** | **Capture** — click the shutter button |
-| **4** | **Save** — click **Open image** on any frame, then *Save image as...* from the new tab |
+| **1** | **Pick a mode** - toggle **Light** or **Dark** for how the captured *site* should render |
+| **2** | **Paste URLs** - one per line; `https://` is added automatically if you leave it off |
+| **3** | **Capture** - click the shutter button |
+| **4** | **Save** - click **Open image** on any frame, then *Save image as...* from the new tab |
 
-> **Note:** screenshots render via a shared [ScreenshotOne](https://screenshotone.com) API key baked into `script.js`, capped at 100 images/month across everyone using this deployment. Swap in your own free key if you outgrow it — see [If you outgrow the shared key](#-if-you-outgrow-the-shared-key).
+> **Note:** screenshots render via a shared [ScreenshotOne](https://screenshotone.com) API key baked into `script.js`, capped at 100 images/month across everyone using this deployment. Swap in your own free key if you outgrow it - see [If you outgrow the shared key](#-if-you-outgrow-the-shared-key).
 
 ---
 
 ## ⚙️ How it works
 
-A GitHub Pages site is just static HTML/CSS/JS with no server behind it, so it can't launch a headless browser the way a local Playwright script could. WEB2PNG works around that by calling the **[ScreenshotOne](https://screenshotone.com)** API and rendering the image it sends back — a full-page capture, 1920px wide, top to bottom, in whichever mode you picked.
+A GitHub Pages site is just static HTML/CSS/JS with no server behind it, so it can't launch a headless browser the way a local Playwright script could. WEB2PNG works around that by calling the **[ScreenshotOne](https://screenshotone.com)** API and rendering the image it sends back - a full-page capture, 1920px wide, top to bottom, in whichever mode you picked.
 
 | | |
 |---|---|
-| 🔒 | **Nothing uploaded anywhere you control** — URLs go straight to ScreenshotOne, never through a server of ours |
-| 📦 | **No install** — just a URL |
-| 🙅 | **No sign-up** — open it and go |
-| 🌗 | **Two independent dark modes** — one for the *site UI* (top-right toggle), one for how the *captured page* renders |
+| 🔒 | **Nothing uploaded anywhere you control** - URLs go straight to ScreenshotOne, never through a server of ours |
+| 📦 | **No install** - just a URL |
+| 🙅 | **No sign-up** - open it and go |
+| 🌗 | **Two independent dark modes** - one for the *site UI* (top-right toggle), one for how the *captured page* renders |
 
 ---
 
@@ -63,10 +63,10 @@ It's easy to mix these up, so to be clear:
 
 | Toggle | Where | What it changes |
 |---|---|---|
-| ☀️/🌙 button, top-right | Site chrome | Switches **WEB2PNG's own interface** between light and dark — just a preference, saved locally |
+| ☀️/🌙 button, top-right | Site chrome | Switches **WEB2PNG's own interface** between light and dark - just a preference, saved locally |
 | **Light / Dark** segmented control | Inside the form | Tells ScreenshotOne to render the **target page itself** in light or dark mode before capturing it |
 
-You can capture a dark-mode screenshot while browsing WEB2PNG in light mode, or vice versa — they're unrelated.
+You can capture a dark-mode screenshot while browsing WEB2PNG in light mode, or vice versa - they're unrelated.
 
 ---
 
@@ -82,7 +82,7 @@ Multiple URLs are supported, one per line. Cookie banners are blocked automatica
 
 ## 🌐 Browser compatibility
 
-Any modern browser works — no WebAssembly, no special APIs beyond `fetch` and the Clipboard API:
+Any modern browser works - no WebAssembly, no special APIs beyond `fetch` and the Clipboard API:
 
 | Browser | Support |
 |---|:---:|
@@ -95,7 +95,7 @@ Any modern browser works — no WebAssembly, no special APIs beyond `fetch` and 
 
 ## 🛠 Running locally
 
-No build step required — it's plain HTML/CSS/JS:
+No build step required - it's plain HTML/CSS/JS:
 
 ```bash
 # Python
@@ -114,7 +114,7 @@ Then open **http://localhost:8080**, or just open `index.html` directly in a bro
 1. Push these four files (`index.html`, `style.css`, `script.js`, `README.md`) to a new GitHub repository, at the repo root.
 2. Go to **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to `Deploy from a branch` → branch `main` → folder `/ (root)` → **Save**.
-4. GitHub gives you a URL like `https://your-username.github.io/your-repo-name/` within a minute or two — that's your live tool.
+4. GitHub gives you a URL like `https://your-username.github.io/your-repo-name/` within a minute or two - that's your live tool.
 5. Come back and drop that URL into the **Open WEB2PNG** link at the top of this file.
 
 ---
@@ -133,7 +133,7 @@ README.md     this file
 
 ## 🐍 The original Python tool
 
-This repo also includes **`WEB2PNG.py`**, the original script this web tool is based on. It uses [Playwright](https://playwright.dev/python/) to drive a real headless browser locally, so it has no rate limit and no dependency on a third-party API — just no web UI.
+This repo also includes **`WEB2PNG.py`**, the original script this web tool is based on. It uses [Playwright](https://playwright.dev/python/) to drive a real headless browser locally, so it has no rate limit and no dependency on a third-party API - just no web UI.
 
 ```bash
 pip install playwright
@@ -156,7 +156,7 @@ const SCREENSHOTONE_KEY = "8FU0wYUBxcqxXA";
 ```
 
 - Grab your own free key at [screenshotone.com](https://screenshotone.com) (no card needed) for your own 100-images-a-month quota instead of sharing this one.
-- For unlimited, self-hosted full-page capture, run **`WEB2PNG.py`** — see [The original Python tool](#-the-original-python-tool) above.
+- For unlimited, self-hosted full-page capture, run **`WEB2PNG.py`** - see [The original Python tool](#-the-original-python-tool) above.
 
 ---
 
